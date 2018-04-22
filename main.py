@@ -7,7 +7,7 @@ URL = 'https://www.youtube.com/results?search_query=Chitãozinho+e+Chororó&sp=E
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'
 
 
-# Executa o rastreamento de página
+# Executa a Spider e o rastreamento da página
 def main():
     Spider(PROJECT_NAME, URL)
 

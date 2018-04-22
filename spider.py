@@ -24,7 +24,7 @@ class Spider:
         create_data_files(Spider.project_name)
         Spider.crawled = file_to_list(Spider.crawled_file)
 
-    # Atualiza a exibição do usuário, preenche a fila e atualiza os arquivos
+    # Atualiza a exibição do usuário e atualiza os arquivos
     @staticmethod
     def crawl_page(url):
         print('Agora rastreando {}\n'.format(url))

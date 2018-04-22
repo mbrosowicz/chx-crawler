@@ -8,7 +8,7 @@ def create_project_dir(directory):
         os.makedirs(directory)
 
 
-# Cria arquivos de fila e rastreados (se não foram criadas)
+# Cria arquivos de informações rastreadas (se já não foram criadas)
 def create_data_files(project_name):
     crawled = os.path.join(project_name, "crawled.txt")
     if not os.path.isfile(crawled):
