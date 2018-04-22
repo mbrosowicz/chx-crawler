@@ -53,8 +53,13 @@ class Spider:
 
         for title in video_titles:
             order_number += 1
-            Spider.crawled.append('{} ) {}'.format(order_number, title))
-            Spider.crawled.append('{} ) {}\n'.format(order_number, views_text[order_number - 1]))
+            complete_title = '{}) {}'.format(order_number, title)
+            complete_views = '{}) {}\n'.format(order_number, views_text[order_number - 1])
+            Spider.crawled.append(complete_title)
+            print(complete_title)
+            Spider.crawled.append(complete_views)
+            print(complete_views)
+        Spider.crawled = list(filter(None, Spider.crawled))
         Spider.crawled.sort(key=lambda x: int(x.split(')')[0]))
         Spider.update_files()
 

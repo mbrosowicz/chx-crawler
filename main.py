@@ -15,4 +15,5 @@ def main():
 # Executa método main
 if __name__ == '__main__':
     main()
+    print("Os dados acima foram salvos no diretório {} no arquivo crawled.txt\n".format(PROJECT_NAME))
     print("O programa foi executado em exatos {} segundos".format(str((time.time() - start_time))))
